@@ -6,6 +6,7 @@ const tax = document.getElementById("tax");
 const totalInvoice = document.getElementById("total");
 const generate = document.getElementById("generate");
 const qr = document.getElementsByClassName("qr-code");
+const download = document.getElementById("download");
 
 const service = ['Current Challan', 'Total Violation', 'TAX'];
 let listItems = "";
@@ -15,13 +16,7 @@ let count2 = 0;
 let count3 = 0;
 
 
-// function htmlEncode(value) {
-// 	return $('<div/>').text(value)
-// 		.html();
-// 	}
-// remove.addEventListener("click", function(){
-  
-// })
+
 function render(num) {
         listItems += `
             <tr class="row-data">
@@ -64,3 +59,7 @@ tax.addEventListener("click", function() {
   input.innerHTML = listItems;}
   count3 += 1;
 })
+
+download.addEventListener("click", function() {
+  window.print();
+});
