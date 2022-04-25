@@ -1,0 +1,83 @@
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" /> -->
+      <title>Invoice Generation App</title>
+  </head>
+  <body>
+    <!-- <img src="dp.png" alt="Police"> -->
+      <div class="invoice-card">
+          <div class="invoice-title">
+            <div id="main-title">
+              <!-- <img src="../dp.png" alt="Police"> -->
+              <h1 id="invoice">E-Challan</h1>
+            </div>
+            <span id="tag">An initiative by VIT Traffic Police</span>
+            <span id="date">
+              <p>
+                <script> document.write(new Date().toDateString()); </script>
+              </p>
+            </span>
+            <span id="vehicle">
+              <p>Vehicle number {{ value }}</p>
+            </span>
+          </div>
+          
+          <div class="services">
+            <table class="service-table">
+              <tr>
+                  <td><button class="btn service-btn" id="curr">Current Challan: ₹500</button></td>
+                  <td><button class="btn service-btn" id="totv">Total Violation: ₹200</button></td>
+                  <td><button class="btn service-btn" id="tax">TAX: ₹17.6</button></td>
+              </tr>
+            </table>
+          </div>
+          
+          <div class="invoice-details">
+            <table class="invoice-table">
+              <thead>
+                <tr>
+                  <td>Task</td>
+                  <td colspan="2">Total</td>
+                </tr>
+              </thead>
+              
+              <tbody id="input">
+                <!--<tr class="row-data">
+                  <td colspan="2">Wash Car <span> Remove</span></td>
+                  <td>$10</td>
+                </tr>-->
+              </tbody>
+            </table><br>
+            <!--<div class="total-details">
+            <table class="invoice-table">
+              <tr class="calc-row">
+                  <td colspan="2">Total</td>
+                  <td id = "total">$00</td>
+              </table>
+              </div>-->
+          </div>
+        <div class="total-details">
+            <table class="invoice-table">
+              <tr class="calc-row">
+                  <td colspan="2">Total</td>
+                  <td id = "total">₹00</td>
+              </table>
+        </div>
+          
+          <div class="invoice-footer">
+            <!--<table class="invoice-table">
+              <tr class="calc-row">
+                  <td colspan="2">Total</td>
+                  <td id = "total">$00</td>
+              </table>-->
+            <button class="btn btn-primary" id="generate"><i class="fas fa-hand-holding-usd"></i><!--<a href="qr.html">-->  Pay Now<!--</a>--></button><br>
+          </div>
+        </div>
+    <script type="text/javascript" src="/static/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  </body>
+  </html>
