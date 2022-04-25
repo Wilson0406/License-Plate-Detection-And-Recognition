@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css');
+
+:root {
+  --primary-color: #ffffff;
+  --background: #5f0a0a;
+  --secondary-color: #2B3784;/*#0053bf;*/
+  --optional-color: #172236;
+  --text-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+body {
+  background-color: #5f0a0a;
+}
+
+.invoice-card {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  /*padding: 10px 2em;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 35em;
+  width: 32em;
+  background-color: var(--background);/* #ffffff;*/
+  /*border-radius: 5px;*/
+  box-shadow:  10px 10px 150px 10px grey;
+}
+
+.invoice-card > div {
+  margin: 0px;
+}
+
+.invoice-title {
+  flex: 3;
+  font-weight: 300;
+  color: var(--text-color);
+  background: var(--secondary-color);
+  width: 100%;
+}
+
+.invoice{
+  font-weight: bolder;
+}
+
+.invoice-title #tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7px 0px;
+  font-size: 0.9rem;
+}
+
+.invoice-title #vehicle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  
+  margin-bottom: 4%;
+}
+
+.invoice-title #date{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px;
+  font-size: 1.1rem;
+  margin-bottom: 2%;
+  margin-top: 4%;
+}
+
+.invoice-title #main-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.8em;
+  font-size: 1.6rem;
+}
+
+.invoice-title #main-title h4 {
+  justify-content: center;
+  align-items: center;
+}
+
+.invoice-details {
+  flex: 1;
+  background: var(--optional-color);
+  color: var(--primary-color);
+  /*border-bottom: 0.7px solid var(--primary-color);*/
+  display: flex;
+  align-items: center;
+}
+
+.total-details {
+  flex: 1;
+  background: var(--optional-color);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+}
+
+.invoice-table {
+  width: 100%;
+  margin: 15px 22px;
+  border-collapse: collapse;
+  /*border-bottom: 0.7px solid var(--primary-color);*/
+}
+
+.invoice-table thead tr td {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  padding: 8px 0;
+}
+
+.invoice-table thead tr td:nth-last-child(1),
+.row-data td:nth-last-child(1),
+.calc-row td:nth-last-child(1)
+{
+  text-align: right;
+}
+
+.invoice-table tbody tr td {
+    padding: 8px 0;
+    letter-spacing: 0;
+}
+
+.calc-row{
+  color: white;
+}
+
+.input{
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.row-data{
+  color: white;
+}
+
+.invoice-table .row-data span {
+  font-size: 8px;
+  color: white;;
+}
+
+.invoice-footer {
+  flex: 1;
+  background: var(--optional-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.code{
+  /* flex: 2; */
+  background: var(--optional-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.qr-code{
+  /* flex: 2; */
+  background: var(--optional-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.invoice-footer #later {
+  margin-right: 5px;
+}
+
+.btn {
+  border-radius: 4px;
+  border: 0px;
+  padding: 8px 0px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  
+}
+
+.services{
+  background: var(--optional-color);
+  color: white;
+  /*padding: 8px 0px;*/
+  padding-left: 8px;
+  padding-right: 20px;
+  justify-content: center;
+  align-items: center;
+  /*margin: 15px 22px;*/
+}
+
+.service-table{
+  justify-content: center;
+  align-items: center;
+}
+
+.service-table tr td{
+  padding: 9px 0px;
+  letter-spacing: 0;
+}
+
+.service-table tr td:nth-last-child(1),
+td:nth-last-child(1)
+{
+  text-align: right;
+}
+
+.btn.service-btn{
+  margin-left: 12px;
+  margin-right: 12px;
+  padding: 7px 8.4px;
+  width: 90%;
+  min-height: 57px;
+  color: black;
+  font-weight: bolder;
+  border: 1px solid grey;
+  font-size: 0.8rem;
+}
+
+.btn.btn-primary {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  font-size: 0.9rem;
+  width: 100%;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+
+.btn#later {
+  margin-right: 2em;
+}
+
+span > button{
+  border: 0;
+  color: white;
+  background: transparent;
+  font-size: 0.4rem;
+  cursor: pointer;
+}
