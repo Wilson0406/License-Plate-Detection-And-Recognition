@@ -12,7 +12,8 @@ For software to detect and recognize a license plate, it undergoes three major p
 3. **Recognizing the number plate** - The values of the detected license plate are extracted from the number plate image.
 
 ## Steps
-1. Install all the modules(pip install -r requirements.txt)
-2. Run app.py file.
-3. Open the link displayed in the terminal.
-4. You're good to go. :)
+1. Install all the modules(pip install -r requirements.txt).
+2. Install pytesseract from [here](https://github.com/UB-Mannheim/tesseract/wiki).
+3. Run app.py file.
+4. Open the link displayed in the terminal to view the challan webpage.
+5. You're good to go. :)
