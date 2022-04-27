@@ -1,0 +1,7 @@
+flask
+joblib
+requests
+datetime
+imutils
+pytesseract
+opencv-contrib-python
